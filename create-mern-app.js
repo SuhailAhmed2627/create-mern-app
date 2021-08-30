@@ -1,5 +1,5 @@
 console.log("Loading...");
-console.log("Setting up Backend, Please Wait :)");
+console.log("Setting up Backend, Please Wait...");
 const { exec } = require("child_process");
 const { mkdirSync, writeFile, readFileSync } = require("fs");
 
@@ -48,7 +48,7 @@ writeFile("./Server/server.js", serverJS, handleErr);
 writeFile("./Server/Middleware/auth.js", "//Your Auth Code", handleErr);
 
 exec(
-   "cd Server && npm init -y && npm install express mongoose body-parser cors && npm install -D morgan && echo Setting up Frontend, Please Wait :)",
+   "cd Server && npm init -y && npm install express mongoose body-parser cors && npm install -D morgan && echo Setting up Frontend, Please Wait...",
    handleExec
 );
 
